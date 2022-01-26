@@ -1,0 +1,48 @@
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="960px"
+	 height="117px" viewBox="0 0 960 117" style="overflow:visible;enable-background:new 0 0 960 117;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.75;fill:url(#SVGID_1_);}
+	.st1{opacity:0.81;fill:url(#SVGID_2_);}
+	.st2{opacity:0.52;fill:url(#SVGID_3_);}
+	.st3{fill:url(#SVGID_4_);}
+	.st4{opacity:0.75;fill:url(#SVGID_5_);}
+	.st5{opacity:0.81;fill:url(#SVGID_6_);}
+	.st6{opacity:0.52;fill:url(#SVGID_7_);}
+	.st7{fill:url(#SVGID_8_);}
+</style>
+<defs>
+</defs>
+<g>
+	
+		<radialGradient id="SVGID_1_" cx="448.2" cy="26.4168" r="343.5324" gradientTransform="matrix(0.9938 0 0 0.9938 34.5839 38.6867)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="0.1043" style="stop-color:#FFE7CD"/>
+		<stop  offset="0.3413" style="stop-color:#FFAA4F"/>
+		<stop  offset="0.4302" style="stop-color:#FF931E"/>
+	</radialGradient>
+	<polygon class="st0" points="960,58.1 0,117 0,12.9 960,12.9 	"/>
+	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="0" y1="56.9798" x2="960" y2="56.9798">
+		<stop  offset="4.475343e-07" style="stop-color:#E61E25"/>
+		<stop  offset="0.7792" style="stop-color:#EC2724"/>
+		<stop  offset="0.9944" style="stop-color:#EE2B24"/>
+	</linearGradient>
+	<polygon class="st1" points="960,45.2 0,114 0,0 960,0 	"/>
+	
+		<radialGradient id="SVGID_3_" cx="448.2" cy="21.9075" r="343.4177" gradientTransform="matrix(0.9938 0 0 0.9938 34.5839 38.6867)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#D32027"/>
+		<stop  offset="8.774543e-02" style="stop-color:#DB3425"/>
+		<stop  offset="0.2611" style="stop-color:#E85623"/>
+		<stop  offset="0.4382" style="stop-color:#F27121"/>
+		<stop  offset="0.6183" style="stop-color:#F9841F"/>
+		<stop  offset="0.8031" style="stop-color:#FE8F1E"/>
+		<stop  offset="1" style="stop-color:#FF931E"/>
+	</radialGradient>
+	<polygon class="st2" points="960,53.2 0,111 0,10 960,10 	"/>
+	<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="0" y1="55.4705" x2="960" y2="55.4705">
+		<stop  offset="4.475343e-07" style="stop-color:#BD161C"/>
+		<stop  offset="1" style="stop-color:#F36C21;stop-opacity:0"/>
+	</linearGradient>
+	<polygon class="st3" points="960,49.2 0,105 0,6 960,6 	"/>
+</g>
+</svg>

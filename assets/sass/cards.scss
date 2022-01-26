@@ -1,0 +1,135 @@
+.card-container {
+    width: 262px;
+    height: 460px;
+    margin: auto;
+    display: block;
+}
+
+.card-main-container {
+    position: relative;
+    width: 262px;
+}
+
+.card-top-container {
+    height: 460px;
+}
+
+.logo-container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 5;
+    left: 20px;
+}
+
+.card-logo {
+    background-color: $orange;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 9;
+}
+
+.card-logo-shadow {
+    background-color: $lightRed;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    opacity: 0.7;
+}
+
+.card-logo-shadow-2 {
+    background-color: $heavyRed;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    opacity: 0.8;
+}
+
+.card-content-container {
+    width: 250px;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+
+.card-content {
+    @extend .card-logo;
+    background-color: #fff;
+}
+
+.card-content-shadow {
+    @extend .card-logo-shadow;
+    background-color: $heavyRed;
+    opacity: 0.8;
+    top: 10px;
+    left: 10px;
+}
+
+.card-content-shadow-2 {
+    @extend .card-logo-shadow-2;
+    background-color: $orange;
+    opacity: 1;
+    top: 5px;
+    left: 5px;
+}
+
+.card-bottom-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -50px;
+    left: 0;
+    z-index: 1;
+}
+
+.card-content {
+    .card-date {
+        font-family: Bahn;
+        text-align: right;
+        margin: 0;
+        padding: 10px 15px 0 0;
+        font-weight: 100;
+    }
+    h4 {
+        font-family: ErasDemi;
+        padding: 0 10px;
+        font-size: 28px;
+        margin: 25px 0 0 0;
+    }
+    p {
+        font-family: Light;
+        font-size: 20px;
+        margin: 20px 0;
+        line-height: 1.2;
+        padding: 0 10px;
+    }
+    .card-data {
+        h6 {
+            span {
+                font-size: 20px;
+                font-family: ErasDemi;
+            }
+            i {
+                margin: 0 7px;
+                font-size: 10px;
+                vertical-align: middle;
+            }
+            margin: 0;
+            padding: 0;
+            color: $orange;
+        }
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.card-button {
+    @extend %cardsButton;
+    z-index: 2;
+}

@@ -1,0 +1,14 @@
+{
+    "require": {
+        "altorouter/altorouter": "^2.0",
+        "symfony/var-dumper": "^5.2",
+        "fzaninotto/faker": "^1.9",
+        "filp/whoops": "^2.12"
+    },
+    "autoload": {
+        "files": ["App/Global.php"],
+        "psr-4": {
+            "App\\": "App/"
+        }
+    }
+}

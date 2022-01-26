@@ -1,0 +1,182 @@
+.container {
+    @extend %container;
+}
+
+.popular-video {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.container-video {
+    width: 50%;
+    max-width: 520px;
+    min-width: 520px;
+    padding-left: 20px;
+    margin-right: 10px;
+    .video-title {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        h4 {
+            margin: 0;
+            font-family: 'ErasDemi';
+            font-size: 20px;
+            padding-left: 7px;
+        }
+        p {
+            margin: 0;
+            font-family: 'Myriad';
+            font-size: 15px;
+            padding-top: 5px;
+            padding-right: 7px;
+        }
+    }
+    iframe {
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 0px 9px 0px #FFFFFF;
+        box-shadow: 0px 0px 9px 0px #FFFFFF;
+    }
+    @media only screen and(max-width: 900px) {
+        width: 90%;
+        max-width: 900px;
+        min-width: 300px;
+        padding-left: 0;
+        margin-right: 0;
+    }
+    @media only screen and(max-width: 500px) {
+        width: 100%;
+        iframe {
+            border-radius: 0;
+            -webkit-box-shadow: 0px 0px 0 0 #FFFFFF;
+            box-shadow: 0px 0px 0 0 #FFFFFF;
+            height: 150px;
+        }
+    }
+}
+
+.video-info {
+    width: 40%;
+    max-width: 320px;
+    min-width: 320px;
+    padding-right: 20px;
+    margin-left: 10px;
+    .video-data {
+        display: flex;
+        justify-content: space-evenly;
+        h6 {
+            margin: 0;
+            font-family: 'ErasBold';
+            color: $orange;
+        }
+        i {
+            color: $orange;
+            font-size: 18px;
+        }
+    }
+    p {
+        font-family: 'Bahn';
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+    }
+    .video-categories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        a {
+            color: $blue;
+            font-family: 'Myriad';
+            font-size: 16px;
+            line-height: 30px;
+            margin: 0 10px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    @media only screen and(max-width: 900px) {
+        max-width: 900px;
+        min-width: 300px;
+        padding-right: 0;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+        .video-data {
+            width: 70%;
+            margin: auto;
+        }
+    }
+    @media only screen and(max-width: 500px) {
+        width: 100%;
+    }
+}
+
+.search-form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+.search-form {
+    select,
+    input {
+        margin: 0 30px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        width: 250px;
+        font-size: 25px;
+        font-family: 'Bahn';
+        background-color: #fff;
+    }
+    select {
+        margin-bottom: 30px;
+        height: 39px;
+        width: 270px;
+    }
+}
+
+.single-training {
+    flex-direction: column;
+    margin-top: -30px;
+    .container-single-video {
+        @extend .container-video;
+        max-width: none;
+        width: 90%;
+        @media only screen and(max-width: 500px) {
+            width: 100%;
+            iframe {
+                border-radius: 0;
+                -webkit-box-shadow: 0px 0px 0 0 #FFFFFF;
+                box-shadow: 0px 0px 0 0 #FFFFFF;
+                height: 150px;
+            }
+        }
+    }
+    .video-single-info {
+        @extend .video-info;
+        display: flex;
+        max-width: none;
+        width: 70%;
+        flex-direction: column-reverse;
+        @media only screen and(max-width: 900px) {
+            max-width: 900px;
+            min-width: 300px;
+            padding-right: 0;
+            margin-left: 0;
+            width: 90%;
+            .video-data {
+                width: 70%;
+                margin: auto;
+            }
+        }
+        @media only screen and(max-width: 500px) {
+            width: 90%;
+        }
+    }
+}

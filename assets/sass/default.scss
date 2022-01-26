@@ -1,0 +1,366 @@
+@font-face {
+    font-family: "ErasBold";
+    src: url("//db.onlinewebfonts.com/t/401b3afcdd14cf76b92956ecc7f7d8e6.eot");
+    src: url("//db.onlinewebfonts.com/t/401b3afcdd14cf76b92956ecc7f7d8e6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/401b3afcdd14cf76b92956ecc7f7d8e6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/401b3afcdd14cf76b92956ecc7f7d8e6.woff") format("woff"), url("//db.onlinewebfonts.com/t/401b3afcdd14cf76b92956ecc7f7d8e6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/401b3afcdd14cf76b92956ecc7f7d8e6.svg#Eras Bold ITC") format("svg");
+}
+
+@font-face {
+    font-family: "ErasDemi";
+    src: url("//db.onlinewebfonts.com/t/457055c70a9c98aa64002f05d6652edc.eot");
+    src: url("//db.onlinewebfonts.com/t/457055c70a9c98aa64002f05d6652edc.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/457055c70a9c98aa64002f05d6652edc.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/457055c70a9c98aa64002f05d6652edc.woff") format("woff"), url("//db.onlinewebfonts.com/t/457055c70a9c98aa64002f05d6652edc.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/457055c70a9c98aa64002f05d6652edc.svg#ITC Eras") format("svg");
+}
+
+@font-face {
+    font-family: "Bahn";
+    src: url("//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.eot");
+    src: url("//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.woff") format("woff"), url("//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.svg#Bahnschrift") format("svg");
+}
+
+@font-face {
+    font-family: "Light";
+    src: url("//db.onlinewebfonts.com/t/061ebca33b7ec27e3ea1e98feb25525a.eot");
+    src: url("//db.onlinewebfonts.com/t/061ebca33b7ec27e3ea1e98feb25525a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/061ebca33b7ec27e3ea1e98feb25525a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/061ebca33b7ec27e3ea1e98feb25525a.woff") format("woff"), url("//db.onlinewebfonts.com/t/061ebca33b7ec27e3ea1e98feb25525a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/061ebca33b7ec27e3ea1e98feb25525a.svg#LesmoreLightCondensed") format("svg");
+}
+
+@font-face {
+    font-family: "Myriad";
+    src: url("//db.onlinewebfonts.com/t/a89cf050c859a23e4b6d9cf5989acf9e.eot");
+    src: url("//db.onlinewebfonts.com/t/a89cf050c859a23e4b6d9cf5989acf9e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a89cf050c859a23e4b6d9cf5989acf9e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a89cf050c859a23e4b6d9cf5989acf9e.woff") format("woff"), url("//db.onlinewebfonts.com/t/a89cf050c859a23e4b6d9cf5989acf9e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a89cf050c859a23e4b6d9cf5989acf9e.svg#Myriad Pro") format("svg");
+}
+
+$orange: #F15A24;
+$lightRed: #e61e25;
+$heavyRed: #eb1b38;
+$lightOrange: #F7931E;
+$yellow: #FBB03B;
+$blue: #3fa9f5;
+$lightGrey: #3b3c3c;
+html {
+    font-size: 30px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../svg/background.svg');
+    background-position: center;
+    background-size: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+%container {
+    margin: auto;
+    max-width: 960px;
+    position: relative;
+}
+
+
+/*DIVIDER STYLE*/
+
+%divider {
+    position: absolute;
+    display: block;
+    width: 100%;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+%divider-title {
+    font-family: ErasBold;
+    color: #fff;
+    font-size: 48px;
+    position: relative;
+    z-index: -1;
+    margin: auto;
+    max-width: 960px;
+}
+
+
+/* CARD'S STYLE */
+
+%cardsButton {
+    width: 200px;
+    height: 55px;
+    font-family: ErasBold;
+    background-color: $lightOrange;
+    color: #fff;
+    border: none;
+    font-size: 35px;
+    -webkit-box-shadow: 5px 5px 0px 0px $orange;
+    box-shadow: 5px 5px 0px 0px $orange;
+    margin-top: 20px;
+    outline: none;
+    transition: all 0.3s;
+    &:hover {
+        cursor: pointer;
+        -webkit-box-shadow: 5px 5px 0px 0px $lightOrange;
+        box-shadow: 5px 5px 0px 0px $lightOrange;
+        background-color: $orange;
+    }
+}
+
+
+/* FORM'S STYLE */
+
+.standard-input {
+    margin-bottom: 20px;
+    height: 35px;
+    width: auto;
+    font-size: 25px;
+    padding: 4px 10px 0 10px;
+    color: #3B3C3C;
+    font-family: 'Bahn';
+    &:focus {
+        outline-color: $orange;
+        outline-width: thick;
+    }
+}
+
+.form-button {
+    margin-bottom: 20px;
+    height: 43px;
+    vertical-align: bottom;
+    width: 220px;
+    background-color: $lightOrange;
+    border: solid 4px white;
+    box-shadow: 5px 5px 0px 2px #000000;
+    font-family: 'ErasBold';
+    color: #fff;
+    font-size: 30px;
+    line-height: 0;
+    transition: all 0.3s;
+    &:hover {
+        cursor: pointer;
+        color: $lightOrange;
+        background-color: #fff;
+        border: solid 4px $lightOrange;
+    }
+}
+
+.form-checkbox {
+    opacity: 0;
+}
+
+.checkbox-label {
+    position: sticky;
+    top: 10px;
+    .custom-checkbox {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 24px;
+        width: 24px;
+        background-color: #fff;
+        border: 4px solid $lightOrange;
+    }
+    .custom-checkbox::after {
+        transform: rotate(45deg) scale(1);
+        -webkit-transform: rotate(0deg) scale(1);
+        -ms-transform: rotate(0deg) scale(1);
+        position: absolute;
+        content: "";
+        left: 12px;
+        top: 12px;
+        height: 0;
+        width: 0;
+        border-radius: 5px;
+        border: solid red;
+        border-width: 0 3px 3px 0;
+        opacity: 0;
+    }
+    .form-checkbox:checked~.custom-checkbox {
+        background-color: $lightOrange;
+        transform: rotate(0deg) scale(1);
+        -webkit-transform: rotate(0deg) scale(1);
+        -ms-transform: rotate(0deg) scale(1);
+        opacity: 1;
+        border: solid 4px $lightOrange;
+    }
+    .form-checkbox:checked~.custom-checkbox::after {
+        transform: rotate( 45deg) scale(1);
+        -webkit-transform: rotate( 45deg) scale(1);
+        -ms-transform: rotate(45deg) scale(1);
+        opacity: 1;
+        left: 6px;
+        top: 2px;
+        width: 8px;
+        height: 15px;
+        border: solid #fff;
+        border-width: 0 4px 4px 0;
+        background-color: transparent;
+        border-radius: 0;
+    }
+}
+
+.checkbox-text {
+    color: #fff;
+    position: relative;
+    font-family: Myriad;
+    font-size: 18px;
+}
+
+
+/* PAGINATION STYLE*/
+
+%pagination-button {
+    margin: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'ErasBold';
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+    width: 250px;
+    height: 50px;
+    box-shadow: 0 0 5px 1px #fff;
+    font-size: 32px;
+}
+
+%pagination {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap-reverse;
+    margin: 70px auto -70px auto;
+    @media only screen and(max-width: 810px) {
+        .pagination-previous-link {
+            order: 1;
+        }
+        .pagination-all-link {
+            order: 3;
+        }
+        .pagination-next-link {
+            order: 2;
+        }
+    }
+    @media only screen and(min-width: 810px) {
+        .pagination-previous-link {
+            order: 1;
+        }
+        .pagination-all-link {
+            order: 2;
+        }
+        .pagination-next-link {
+            order: 3;
+        }
+    }
+    i {
+        position: absolute;
+        top: 5px;
+        font-size: 40px;
+    }
+    .all-button {
+        @extend %pagination-button;
+        background: linear-gradient(90deg, rgba(247, 147, 30, 1) 0%, rgba(241, 90, 36, 1) 51%, rgba(251, 176, 59, 1) 100%);
+    }
+    .previous {
+        i {
+            left: 211px;
+            transition: left 0.3s;
+        }
+        background-size: 100%;
+        background-image: linear-gradient(90deg,
+        rgba(251,
+        176,
+        59,
+        1) 0%,
+        rgba(247,
+        147,
+        30,
+        1) 55%,
+        rgba(241,
+        90,
+        36,
+        1) 100%);
+        @extend %pagination-button;
+        &:before {
+            border-radius: inherit;
+            background-image: linear-gradient(90deg, rgba(241, 90, 36, 1) 0%, rgba(247, 147, 30, 1) 55%, rgba(251, 176, 59, 1) 100%);
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            width: 100%;
+            z-index: -100;
+            transition: opacity 1s;
+        }
+        &:hover {
+            i {
+                left: 0;
+            }
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+    .next {
+        i {
+            left: 0;
+            transition: left 0.3s;
+        }
+        background-size: 100%;
+        background-image: linear-gradient(90deg,
+        rgba(241,
+        90,
+        36,
+        1) 0%,
+        rgba(247,
+        147,
+        30,
+        1) 55%,
+        rgba(251,
+        176,
+        59,
+        1) 100%);
+        @extend %pagination-button;
+        &:before {
+            border-radius: inherit;
+            background-image: linear-gradient(90deg, rgba(251, 176, 59, 1) 0%, rgba(247, 147, 30, 1) 55%, rgba(241, 90, 36, 1) 100%);
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            width: 100%;
+            z-index: -100;
+            transition: opacity 1s;
+        }
+        &:hover {
+            i {
+                left: 211px;
+            }
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@import 'header';
+@import 'home';
+@import 'cards';
+@import 'footer';
+@import 'training';
+@import 'blog';
